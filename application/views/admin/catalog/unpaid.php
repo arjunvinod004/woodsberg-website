@@ -62,6 +62,15 @@
                      <input type="text " class="form-control" id="unpaid-phone"  value="" placeholder="Phone No">
                     </div>
 
+                    <div class="col-md-2">
+                    <label for="name" class="form-label">payment status</label>
+                   <select  name="payment_status" id="payment_status" class="form-select">
+                    <option selected value="processing">Processing</option>
+                    <option  value="user aborted">failed</option>
+                     <option  value="pending">pending</option>
+                   </select>
+                    </div>
+
                      <div class="col-md-2 mt-4">
                      <button type="button" class="btn btn-primary" id="unpaid-search" data-type="rt">Search</button>
                     </div>

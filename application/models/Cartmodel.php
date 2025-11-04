@@ -156,6 +156,37 @@ public function getwishlistcount($token) {
    // return $total_qty;
  }
 
+
+
+   public function saveproductitem($token,$cartitems,$total_amount,$orderno)
+ {
+     
+     $this->db->where('guest_token', $token); 
+    $this->db->delete('sample_order');
+   foreach ($cartitems as $item)
+{
+    $product_id = $item['product_id'];
+    $quantity = $item['quantity'];
+    $product_name = $item['name'];
+    $price = $item['product_price'];
+    $amount = $item['price'];
+    $this->db->insert('sample_order',
+    [
+    'guest_token' => $token,
+    'order_no' => $orderno,
+    'product_id' => $product_id,
+    'product_name'=>$product_name,
+    'quantity' => $quantity,
+    'price' => $price,
+    'amount' => $amount,
+    'total_amount' => $total_amount,
+    'date' => date('Y-m-d H:i:s'),
+    'time' => date('H:i:s')
+    ]
+    );
+}
+
+ }
 public function get_shipping_by_state($state)
 {
         $this->db->select('shipping_charge');

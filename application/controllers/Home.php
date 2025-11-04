@@ -1348,6 +1348,8 @@ public function addusercheckout()
                 {
                     $data['customerdetails']= $this->db->where('user_token', $token)->get('customers')->row_array();
                 }
+
+                // echo "order no=".$order_number; exit;
                     $this->db->insert('orders',[
                     'order_no'=> $order_number,
                     'customer_id' => $customer_id ?? 0,
@@ -1366,11 +1368,14 @@ public function addusercheckout()
                     'shipping_charge'=>$customer_shipping,
                     'coupon_code'=>$customer_coupon
                 ]);
+
                 $order_id = $this->db->insert_id();
                 $cart_items = $this->Cartmodel->cartitems($token);
                 $this->Cartmodel->saveproductitem($token,$cart_items,$total_amount,$order_number);
                 $this->db->where('order_id', $order_number);
                 $this->db->delete('order_items');
+
+                // echo "here";
 
                 foreach ($cart_items as $item)
                 {

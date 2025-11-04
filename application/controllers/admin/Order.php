@@ -245,10 +245,11 @@ public function searchUnpaidOrder(){
     $phone   = trim($this->input->post('phone'));
     $orderno = trim($this->input->post('orderno'));
     $type    = trim($this->input->post('type'));
+    $payment_status = trim($this->input->post('payment_status'));
     $html = '';
 
- if ($name || $email || $phone || $orderno || $type) {
- $searchorders = $this->Productmodel->searchunpaidorder($name, $email, $phone, $orderno, $type);
+ if ($name || $email || $phone || $orderno || $type || $payment_status) {
+ $searchorders = $this->Productmodel->searchunpaidorder($name, $email, $phone, $orderno, $type, $payment_status);
 $count = 1; 
  foreach ($searchorders as $val) 
     {

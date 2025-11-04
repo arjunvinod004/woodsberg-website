@@ -4177,7 +4177,8 @@ e.preventDefault(); // prevent form submission until validation
 
 //MARK: Forgot password in website
 
-$(document).on('click', '.forgotpassword', function (e) {
+$(document).on('click', '.forgotpassword', function (e) 
+{
 e.preventDefault(); // prevent form submission until validation
     let isValid = true;
 
@@ -4306,6 +4307,9 @@ $(document).on('click', '.convertorder', function () {
         })
 });
 
+
+
+
 $(document).on('click', '.canceldespatch', function () {
   var id = $(this).attr('data-id');
   $.ajax({
@@ -4367,6 +4371,8 @@ $(document).on('click', '#unpaid-search', function () {
   var email = $('#unpaid-email').val();
   var orderno = $('#unpaid-orderno').val();
   var phone = $('#unpaid-phone').val();
+  var payment_status = $('#payment_status').val();
+  alert(payment_status);
   $.ajax({
             url: base_url + 'admin/Order/searchUnpaidOrder',
             type: 'POST',
@@ -4375,7 +4381,8 @@ $(document).on('click', '#unpaid-search', function () {
                 'orderno': orderno,
                 'email': email,
                 'phone': phone,
-                'type': type
+                'type': type,
+                'payment_status': payment_status
             },
             dataType: 'json',
             success: function (response) {

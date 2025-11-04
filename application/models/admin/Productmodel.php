@@ -634,12 +634,15 @@ public function listunpaidorders()
     $this->db->select('o.id,c.name,o.total_amount,c.phone, o.order_type,o.order_no,o.is_paid,o.order_date,o.time,o.email,c.state,c.postal_code,c.address,o.is_despatch,o.is_paid,o.transaction_id,o.payment_status');
     $this->db->from('orders AS o');
 	 $this->db->join('customers As c', 'o.customer_id = c.id');
+	 $this->db->where('payment_status','processing');
 	$this->db->where('o.is_despatch', '0');
 	$this->db->where('o.is_paid', '0');
     $this->db->order_by("o.id", "desc");
     $query = $this->db->get();
     return $query->result_array();
 }
+
+
 
 public function listunpaidwholesaleorders() 
 {
@@ -691,7 +694,7 @@ public function searchpendingorder($name = '', $email = '', $phone = '', $ordern
 }
 
 
-public function searchunpaidorder($name = '', $email = '', $phone = '', $orderno = '', $type = '')
+public function searchunpaidorder($name = '', $email = '', $phone = '', $orderno = '', $type = '', $payment_status = '')
 {
     $this->db->select('orders.*, customers.name, customers.email, customers.phone, customers.state, customers.postal_code');
     $this->db->from('orders');
@@ -717,10 +720,14 @@ public function searchunpaidorder($name = '', $email = '', $phone = '', $orderno
     if (!empty($type)) {
         $this->db->where('orders.order_type', $type);
     }
+
+	 if (!empty($payment_status)) {
+        $this->db->where('orders.payment_status', $payment_status);
+    }
     // Sort by latest
 	$this->db->where('orders.is_despatch','0');
 	$this->db->where('orders.is_paid','0');
-    $this->db->order_by('orders.order_date', 'DESC');
+    $this->db->order_by('orders.order_date', 'ASC');
     $query = $this->db->get();
     return $query->result_array();
 }
