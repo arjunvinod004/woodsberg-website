@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <!-- plugins -->
+ 
+    
+</head>
+<body>
+<div class="main-wrapper">
+<section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-7 col-xl-6">
+                        <div class="bg-white p-4 border border-width-5">
+                            <div class="text-center section-heading">
+                                <h2>Login</h2>
+
+                            </div>
+                            <form method="post">
+
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+
+                                        <div class="form-group">
+                                            <label>User Name</label>
+                                            <input type="text" class="form-control" name="name" placeholder="Your user name here">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-12">
+
+                                        <div class="form-group">
+                                            <label>Password </label>
+                                            <input type="password" class="form-control" name="password" placeholder="Your password here">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6 mb-2">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="login-remember">
+                                            <label class="custom-control-label" for="login-remember">Keep me signed in</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 text-start text-sm-end">
+                                        <a href="forgot-password.html" class="m-link-muted">Forgot password?</a>
+                                    </div>
+
+                                </div>
+
+                                <button type="button" class="butn primary w-100 mt-4"><span>Login</span></button>
+                                <div class="text-center text-small mt-4">
+                                    <span>Don't have an account yet? <a href="registration.html">Register</a></span>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+</div>
+</body>
+</html>

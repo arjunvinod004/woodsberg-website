@@ -1,0 +1,13 @@
+[04-Dec-2024 13:52:27 UTC] PHP Fatal error:  Cannot redeclare Qrcodes::generateDiningQrCode() in /home1/qrexpdrg/public_html/codeigniter/application/controllers/admin/Qrcodes.php on line 110
+[30-Aug-2025 16:48:02 Asia/Kolkata] Invalid address:  (to): 
+[30-Aug-2025 17:22:05 Asia/Kolkata] Invalid address:  (to): 
+[30-Aug-2025 17:26:23 Asia/Kolkata] Invalid address:  (to): 
+[23-Sep-2025 06:31:38 UTC] PHP Notice:  Undefined variable: orderno in /home/ot5hoivjagld/public_html/send_mail.php on line 74
+[23-Sep-2025 06:33:52 UTC] PHP Notice:  Undefined variable: orderno in /home/ot5hoivjagld/public_html/send_mail.php on line 71
+[23-Sep-2025 06:50:01 UTC] PHP Parse error:  syntax error, unexpected '12222' (T_LNUMBER) in /home/ot5hoivjagld/public_html/send_mail.php on line 71
+[23-Sep-2025 12:47:48 Asia/Kolkata] PHP Fatal error:  Cannot declare class PHPMailer\PHPMailer\PHPMailer, because the name is already in use in /home/ot5hoivjagld/public_html/PHPMailer/PHPMailer.php on line 32
+[23-Sep-2025 12:48:00 Asia/Kolkata] PHP Fatal error:  Cannot declare class PHPMailer\PHPMailer\PHPMailer, because the name is already in use in /home/ot5hoivjagld/public_html/PHPMailer/PHPMailer.php on line 32
+[23-Sep-2025 12:51:39 Asia/Kolkata] PHP Fatal error:  Cannot declare class PHPMailer\PHPMailer\PHPMailer, because the name is already in use in /home/ot5hoivjagld/public_html/PHPMailer/PHPMailer.php on line 32
+[23-Sep-2025 12:51:53 Asia/Kolkata] PHP Fatal error:  Cannot declare class PHPMailer\PHPMailer\PHPMailer, because the name is already in use in /home/ot5hoivjagld/public_html/PHPMailer/PHPMailer.php on line 32
+[23-Sep-2025 12:53:11 Asia/Kolkata] PHP Fatal error:  Cannot declare class PHPMailer\PHPMailer\PHPMailer, because the name is already in use in /home/ot5hoivjagld/public_html/PHPMailer/PHPMailer.php on line 32
+[23-Sep-2025 12:53:26 Asia/Kolkata] PHP Fatal error:  Cannot declare class PHPMailer\PHPMailer\PHPMailer, because the name is already in use in /home/ot5hoivjagld/public_html/PHPMailer/PHPMailer.php on line 32

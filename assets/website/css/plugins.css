@@ -1,0 +1,30 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Fabrex - Multipurpose Business and Admin Template
+    Description: Multipurpose Business and Admin Template
+    Author: Chitrakoot Web
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All CSS Plugins & Default Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("plugins/bootstrap.min.css");
+@import url("plugins/animate.css");
+/* @import url("plugins/fontawesome-all.min.css");
+@import url("plugins/themify-icons.css");
+@import url("plugins/magnific-popup.css"); */
+@import url("plugins/owl.carousel.css");
+@import url("plugins/owl.theme.default.css");
+/* @import url("plugins/lightgallery.css");
+@import url("plugins/xzoom.css");
+@import url("plugins/datetimepicker.css"); */
+
+/* == default classes == */
+@import url("plugins/default.css");
+
+/* == navigation == */
+@import url("plugins/nav-menu.css");
+/* @import url("plugins/prism.css"); */

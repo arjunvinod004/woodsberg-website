@@ -1,0 +1,122 @@
+ body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #333;
+        padding-bottom: 20px;
+    }
+
+    .company-info h2 {
+        margin: 0;
+        color: #333;
+        font-size: 24px;
+    }
+
+    .company-info p {
+        margin: 5px 0;
+        color: #666;
+        font-size: 12px;
+    }
+
+    .invoice-info {
+        text-align: right;
+    }
+
+    .invoice-info h3 {
+        margin: 0;
+        font-size: 28px;
+        color: #333;
+    }
+
+    .invoice-info p {
+        margin: 5px 0;
+        color: #666;
+    }
+
+    .customer-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .customer-details h4 {
+        margin-top: 0;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .customer-details p {
+        margin: 3px 0;
+        font-size: 13px;
+        color: #555;
+    }
+
+    .order-info p {
+        margin: 3px 0;
+        font-size: 13px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        border: none;
+        padding: 12px 8px;
+        text-align: center;
+    }
+
+    th {
+        background: #f8f9fa;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+
+    .item-desc {
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .price-col,
+    .total-col {
+        font-weight: 500;
+    }
+
+    .grand-total {
+        text-align: right;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .gst-info {
+        margin: 20px 0;
+        font-size: 12px;
+        color: #666;
+    }
